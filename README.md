@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Intro
+
+In this project we will record the steps for preparing / configuring a deployment in steps. 
+
+We will keep all configuration steps in branches. And we will note the progress here in the README file in the section "Deployment steps" as we progress.
+
+## Deployment steps
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
