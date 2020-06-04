@@ -8,7 +8,10 @@ We will keep all configuration steps in branches. And we will note the progress 
 
 ## Deployment steps
 
-### Step 3 - Exchange BrowserRouter by HashRouter
+
+### Step 5 - Exchange BrowserRouter by HashRouter (branch hash-router)
+
+Branch: hash-router
 
 BrowserRouter causes problems because it generates urls with multiple route paths.
 
@@ -16,7 +19,16 @@ HashRouter provides us with the hack of just ONE route and passing the route
 "secrectly" inside a hash.
 
 
-### Step 2 - Outsource external data to .env
+### Step 4 - Added React routing
+
+Branch: add-routing
+
+Added package react-router-dom and implemented Browser router
+Nothing deployment specific done in here
+
+### Step 3 - Outsource external data to .env
+
+Branch: outsource-environment
 
 External information like API urls or image server urls or anything else external
 we typically outsource as variables into an .env file
@@ -35,7 +47,14 @@ we typically outsource as variables into an .env file
 
 Most prominent use case: Outsource URL of API
 
+### Step 2 - Added fetching
+
+Branch: api-fetch
+Nothing deployment specific in there, just added an API fetch call
+
 ### Step 1 - GitHub Pages script & homepage key
+
+Branch: ghpages-setup
 
 In this stage we did the following steps - in that order
 
