@@ -12,7 +12,7 @@ We will keep all configuration steps in branches. And we will note the progress 
 
 Branch: hash-router
 
-BrowserRouter causes problems because it generates urls with subpaths, which a server interprets as "subfolders" that it tries to lookup. And fails miserably. Because it doesn't know about this "single page" thing and that all traffic needs to get routes to the index.html page.
+BrowserRouter causes problems because it generates urls with subpaths, which a server interprets as "subfolders" that it tries to lookup. And fails miserably. Because it doesn't know about this "single page" thing and that all incoming traffic needs to get forwarded to the index.html page. The React Dev Server knows and does it for us in the background. But "normal" static servers, like GitHub Pages, do not know.
 
 HashRouter provides us with the hack of just ONE route and passing the route 
 "secrectly" inside a hash. React router will correctly interpret this hash as route information and your routing will work smoothly.
