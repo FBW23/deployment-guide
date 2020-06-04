@@ -9,11 +9,18 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://ds-todo-api.now.sh/todos")
+
+    // process.env holds all our variables (key value pairs) stored in .env file
+    let API_URL = process.env.REACT_APP_API_URL
+
+    console.log("API URL", API_URL)
+
+    fetch(API_URL)
     .then(res => res.json())
     .then(todosApi => {
       this.setState({todos: todosApi})
     })
+
   }
 
   render() {
