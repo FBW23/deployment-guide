@@ -9,7 +9,7 @@ We will keep all configuration steps in branches. And we will note the progress 
 ## Deployment steps
 
 
-### Step 5 - Exchange BrowserRouter by HashRouter (branch hash-router)
+### Step 5 - Exchange BrowserRouter by HashRouter
 
 Branch: hash-router
 
@@ -25,6 +25,7 @@ Branch: add-routing
 
 Added package react-router-dom and implemented Browser router
 Nothing deployment specific done in here
+
 
 ### Step 3 - Outsource external data to .env
 
@@ -47,10 +48,13 @@ we typically outsource as variables into an .env file
 
 Most prominent use case: Outsource URL of API
 
+
 ### Step 2 - Added fetching
 
 Branch: api-fetch
+
 Nothing deployment specific in there, just added an API fetch call
+
 
 ### Step 1 - GitHub Pages script & homepage key
 
