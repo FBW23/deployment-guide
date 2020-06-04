@@ -8,6 +8,17 @@ We will keep all configuration steps in branches. And we will note the progress 
 
 ## Deployment steps
 
+### Step 2 - Outsource external data to .env
+
+External information like API urls or image server urls or anything else external
+we typically outsource as variables into an .env file
+
+- Created an .env file
+- Every entry has the format: KEY=VALUE (without quotes!)
+- Usage in React: process.env.KEY
+
+Most prominent use case: Outsource URL of API
+
 ### Step 1 - GitHub Pages script & homepage key
 
 - Installed gh-pages `npm i -D gh-pages`
@@ -17,6 +28,8 @@ We will keep all configuration steps in branches. And we will note the progress 
 "deploy": "gh-pages -d build"
 ```
 - add homepage key to package.json ` "homepage": "." `
+
+- Deploying your app by running: `npm run deploy`
 
 ## Available Scripts
 
