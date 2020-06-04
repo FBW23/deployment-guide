@@ -14,8 +14,13 @@ External information like API urls or image server urls or anything else externa
 we typically outsource as variables into an .env file
 
 - Created an .env file
-- Every entry has the format: KEY=VALUE (without quotes!)
-- Usage in React: process.env.KEY
+  - Important: You need to store it in your main folder! Not inside src folder
+  - Every entry has the format: KEY=VALUE (without quotes!)
+  - Important: All KEYs need to start with REACT_APP_
+    - e.g. REACT_APP_MY_API_URL
+  - All keys without that prefix will get ignored by the React build
+
+- Usage of your Env Variables in your React code: process.env.KEY
 
 Most prominent use case: Outsource URL of API
 
