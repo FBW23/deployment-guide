@@ -77,7 +77,7 @@ In this stage we did the following steps - in that order
   - Second stage: Uploading the build to gh-pages branch
   - Hint: The gh-pages tool will create the gh-pages branch on GitHub automatically!
 
-### Debugging Gh-Pages
+### Troubleshooting - Debugging Gh-Pages
 
   - How to checkout my deployed site?
     - GitHub Repo &gt; Settings &gt; Section GitHub Pages
@@ -94,6 +94,12 @@ In this stage we did the following steps - in that order
     - If you cannot see your recent deployment here - you need to wait a bit :) 
      - Check also your gh-pages branch and watch the update dates of the files
      - If they were changed recently your deploy worked. You just need to wait a bit
+
+  - I see the README file on my published site!
+    - Check in Settings - Section GitHub Pages - check the deploy source
+      - Is it master? It needs to be gh-pages
+      - In case it is gh-pages already
+        - wait for some minutes to GH to update :)
 
 ## Available Scripts
 
