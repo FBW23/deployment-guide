@@ -124,9 +124,10 @@ In this stage we did the following steps - in that order
   - Get into a react app folder you want to deploy
   - Type `vercel`
   - Follow the instructions (in case of doubt - accept all the defaults please with enter please)
-  - After deployment finished you receive three links
+  - After deployment finished you receive two links
     - Open the "Production" link in the browser
     - Check if your App was deployed correctly
+    - The other link "Inspect" is for checking your deployment status & any issues
   - On all subsequent deployments you do `vercel --prod`
     - if you just type "vercel" you get a preview deloyment
       ( to check out if everythings works okay - before you overwrite your real webpage)
