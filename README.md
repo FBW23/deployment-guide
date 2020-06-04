@@ -22,6 +22,9 @@ we typically outsource as variables into an .env file
 
 - Usage of your Env Variables in your React code: process.env.KEY
 
+- Important: Whenever you change contents of the .env file, you need to quit your current running react and run npm start again
+  - The React dev server does not detect changes on .env files by default
+
 Most prominent use case: Outsource URL of API
 
 ### Step 1 - GitHub Pages script & homepage key
