@@ -8,8 +8,15 @@ We will keep all configuration steps in branches. And we will note the progress 
 
 ## Deployment steps
 
+### Step 1 - GitHub Pages script & homepage key
 
-
+- Installed gh-pages `npm i -D gh-pages`
+- Create deployment scripts in package.json (section scripts)
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+```
+- add homepage key to package.json ` "homepage": "." `
 
 ## Available Scripts
 
