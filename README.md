@@ -8,7 +8,6 @@ We will keep all configuration steps in branches. And we will note the progress 
 
 ## Deployment steps
 
-
 ### Step 5 - Exchange BrowserRouter by HashRouter
 
 Branch: hash-router
@@ -100,6 +99,39 @@ In this stage we did the following steps - in that order
       - Is it master? It needs to be gh-pages
       - In case it is gh-pages already
         - wait for some minutes to GH to update :)
+
+## Deployment Vercel (Zeit.now)
+
+- Signup: vercel.com/signup
+  - Use GitHub for signup
+  - In case you are not logged in - log into GitHub
+- After account creation
+  - Go to tab "Settings" &gt; Email
+    - this Email (=your GitHub email) will be used for login
+  - Direct link to settings: https://vercel.com/account
+
+- Install vercel: `npm i -g vercel`
+
+- Login (just on first usage)
+  - `vercel login`
+  - State your email address you got from Vercel settings page
+  - You will get an email for verifying your account
+  - Once you clicked the confirmation link and you see the verification
+    - go back to the terminal
+    - you should get a message for successful connection
+
+- Deployment
+  - Get into a react app folder you want to deploy
+  - Type `vercel`
+  - Follow the instructions (in case of doubt - accept all the defaults please with enter please)
+  - After deployment finished you receive three links
+    - Open the "Production" link in the browser
+    - Check if your App was deployed correctly
+  - On all subsequent deployments you do `vercel --prod`
+    - if you just type "vercel" you get a preview deloyment
+      ( to check out if everythings works okay - before you overwrite your real webpage)
+
+DONE!
 
 ## Available Scripts
 
