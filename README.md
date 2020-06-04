@@ -21,15 +21,40 @@ Most prominent use case: Outsource URL of API
 
 ### Step 1 - GitHub Pages script & homepage key
 
-- Installed gh-pages `npm i -D gh-pages`
-- Create deployment scripts in package.json (section scripts)
+In this stage we did the following steps - in that order
+
+- We picked an App that is connected to GitHub
+- Installed gh-pages in that folder: `npm i -D gh-pages`
+- Created deployment scripts in package.json (section scripts)
 ```
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 ```
-- add homepage key to package.json ` "homepage": "." `
+- add homepage key to package.json ` "homepage": "." ` (directly after key "private")
 
 - Deploying your app by running: `npm run deploy`
+  - This will execute both the predeploy & deploy scripts (in that order)
+  - First stage: Building
+  - Second stage: Uploading the build to gh-pages branch
+  - Hint: The gh-pages tool will create the gh-pages branch on GitHub automatically!
+
+### Debugging Gh-Pages
+
+  - How to checkout my deployed site?
+    - GitHub Repo &gt; Settings &gt; Section GitHub Pages
+      - Here you shoud see in green "Your site is published at ..url.."
+      - If it says instead it is in process of publishing the URL will show a 404
+        - Nothing left to wait some time then :D
+      - If it does not show anything here: 
+        - Check if you have the "gh-pages" branch in your repository
+        - If not: You forgot to run "npm run deploy"
+
+  - I did another update deploy - but my changes are not online yet!
+    - In your GitHub repo go to tab "Code" and then tab "Environment"
+    - Check here the deployment status - and especially the time
+    - If you cannot see your recent deployment here - you need to wait a bit :) 
+     - Check also your gh-pages branch and watch the update dates of the files
+     - If they were changed recently your deploy worked. You just need to wait a bit
 
 ## Available Scripts
 
