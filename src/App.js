@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 
 class App extends React.Component {
   state = {
@@ -26,6 +25,10 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/other">Other</Link>
+        </nav>
         <Switch>
           <Route path="/" exact>
             <header className="App-header">

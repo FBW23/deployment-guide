@@ -8,6 +8,14 @@ We will keep all configuration steps in branches. And we will note the progress 
 
 ## Deployment steps
 
+### Step 3 - Exchange BrowserRouter by HashRouter
+
+BrowserRouter causes problems because it generates urls with multiple route paths.
+
+HashRouter provides us with the hack of just ONE route and passing the route 
+"secrectly" inside a hash.
+
+
 ### Step 2 - Outsource external data to .env
 
 External information like API urls or image server urls or anything else external
